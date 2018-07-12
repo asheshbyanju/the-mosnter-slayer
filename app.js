@@ -75,11 +75,11 @@ new Vue({
       if(this.monsterHealth <= 0) {
         if (confirm('You won! New Game?')){
           this.startGame();
-          return true;
         }
         else{
           this.gameIsRunning = false;  
         }
+        return true;
       } 
       else if (this.playerHealth <= 0){
         if(confirm('You lose! New Game?')) {
